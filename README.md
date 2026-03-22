@@ -21,7 +21,6 @@ project/
 └── README.md
 ⚙️ Setup Instructions
 1️⃣ Clone the repository
-git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
 2️⃣ Create virtual environment
 python -m venv venv
@@ -35,11 +34,6 @@ Create a .env file:
 
 OPENAI_API_KEY=your_openai_api_key
 TELEGRAM_TOKEN=your_telegram_bot_token
-🧠 Data Ingestion (IMPORTANT)
-
-Before running the bot, populate the vector database:
-
-python ingest.py
 
 Ensure:
 
@@ -61,7 +55,7 @@ User Query
    ↓
 Telegram Bot (bot.py)
    ↓
-RAG Pipeline (rag_pipeline.py)
+RAG Pipeline (assist.py)
    ↓
 Embedding → Vector Search (ChromaDB)
    ↓
@@ -86,20 +80,12 @@ Check collection name (Document)
 Ensure persistence is enabled
 ❌ Invalid Telegram Token
 Verify .env file
-Restart application
-❌ Event loop error
 Run using:
 python app.py
 
-(not Jupyter)
+(not Jupyter Notebook)
 
-🔮 Future Improvements
-🧠 Conversation memory expansion
-🔁 Semantic caching
-📄 PDF upload support
-🌐 Web interface (FastAPI)
-☁️ Deployment (Render / Railway)
-🛠️ Tech Stack
+
 Python
 OpenAI API
 ChromaDB
@@ -107,7 +93,7 @@ python-telegram-bot
 python-dotenv
 👨‍💻 Author
 
-Your Name
+Gourab Som
 
 ⭐ Support
 
